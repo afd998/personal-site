@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+* {
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.walls {
+  fill: #444444;
+}
+.kit-bg {
+  fill: #99ccaa;
+}
+.bath-bg {
+  fill: #99cccc;
+}
+.stairs {
+  fill: #bb8866;
+}
+.wnd {
+  fill: #bbeeff;
+}
+.out-bg {
+  fill: #ccbbaa;
+}
+.hall-bg {
+  fill: #cccccc;
+}
+.kid-bg {
+  fill: #eeaa99;
+}
+.bed-bg {
+  fill: #eebb99;
+}
+.logo-bg {
+  fill: #eeeeee;
+}
+.logo {
+  fill: #ff5500;
+}
+.liv-bg {
+  fill: #ffccaa;
+}
+.frames {
+  fill: black;
+  fill-rule: nonzero;
+}
+.bath {
+  fill: #334466;
+  fill-rule: nonzero;
+}
+.liv {
+  fill: #336655;
+  fill-rule: nonzero;
+}
+.out {
+  fill: #558800;
+  fill-rule: nonzero;
+}
+.kid {
+  fill: #5599cc;
+  fill-rule: nonzero;
+}
+.doors {
+  fill: #666666;
+  fill-rule: nonzero;
+}
+.hall {
+  fill: #993300;
+  fill-rule: nonzero;
+}
+.logo {
+  fill: #ff5500;
+  fill-rule: nonzero;
+}
+.bed {
+  fill: #ff6655;
+  fill-rule: nonzero;
+}
+.kit {
+  fill: #ff8800;
+  fill-rule: nonzero;
+}
+.ico {
+  fill: white;
+  fill-rule: nonzero;
+}
+.fnt0 {
+  font-weight: 300;
+  font-size: 1421.07px;
+  font-family: "Lato Light";
+}
+.bedroom:hover .bed {
+  fill: #ff5533;
+}
+.bedroom:hover .bed-bg {
+  fill: #ffaa88;
+}
+.kitchen:hover .kit {
+  fill: #ee7700;
+}
+.kitchen:hover .kit-bg {
+  fill: #77bb99;
+}
+.kid-room:hover .kid {
+  fill: #3388cc;
+}
+.kid-room:hover .kid-bg {
+  fill: #ee9999;
+}
+.living:hover .liv {
+  fill: #225555;
+}
+.living:hover .liv-bg {
+  fill: #ffbb88;
+}
+.entrance:hover .hall {
+  fill: #882222;
+}
+.entrance:hover .hall-bg {
+  fill: #ccbbbb;
+}
+.outdoor:hover .out {
+  fill: #447700;
+}
+.outdoor:hover .out-bg {
+  fill: #ddbb99;
+}
+.bathroom:hover .bath {
+  fill: #333666;
+}
+.bathroom:hover .bath-bg {
+  fill: #99bbcc;
+}
+.wf-logo:hover .logo {
+  fill: #ff4400;
+}
+
+.wrapper {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  perspective: 1000px;
+}
+
+.plan {
+  transform: rotateX(50deg) rotate(-20deg) skewX(3deg) skewY(-0.85deg)
+    scaleX(0.95);
+}
