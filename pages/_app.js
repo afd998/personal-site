@@ -9,10 +9,10 @@ const MyApp = ({ Component, pageProps }) => {
   return (
     <div className=" min-h-screen dark:text-white dark:bg-black">
       <Header />
-      <div className="pr-3 pl-1">
+      <div className="pr-3 pl-1 h-screen">
         <Component {...pageProps} />
-        <Footer />
       </div>
+      <Footer />
     </div>)
 }
 export default MyApp

@@ -146,8 +146,7 @@ html,
 } */
 
 .plan {
-  transform: rotateX(50deg) rotate(-20deg) skewX(3deg) skewY(-0.85deg)
-    scale(1.5);
+  transform: rotateX(50deg) rotate(-20deg) skewX(3deg) skewY(-0.85deg);
 }
 
 .cls-1 {
