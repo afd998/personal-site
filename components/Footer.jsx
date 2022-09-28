@@ -9,7 +9,7 @@ function Footer() {
   //source
   //resume
   return (
-    <div className=" static bottom-0 w-full left-0 flex justify-between">
+    <div className="w-full flex-col sm:flex-row flex sm:justify-between flex-wrap items-center">
       <div>
         Desgined and Built by{" "}
         <Link href="/">

@@ -5,7 +5,7 @@ function Map() {
   const router = useRouter();
   return (
     <>
-      <div className="wrapper flex w-screen px-5 justify-center absolute lg:top-0">
+      <div className="wrapper flex w-screen px-5 justify-center absolute  top-25 sm:top-10 md:top-0">
         <svg
           className="plan w-5/6 max-w-2xl"
           xmlns="http://www.w3.org/2000/svg"

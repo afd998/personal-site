@@ -7,11 +7,12 @@ const MyApp = ({ Component, pageProps }) => {
 
 
   return (
-    <div className=" min-h-screen dark:text-white dark:bg-black">
-      <Header />
-      <div className="pr-3 pl-1 h-screen">
-        <Component {...pageProps} />
-      </div>
+    <div className=" min-h-screen dark:text-white dark:bg-black flex flex-col justify-between">
+      <div>
+        <Header />
+        <div className="pr-3 pl-1">
+          <Component {...pageProps} />
+        </div></div>
       <Footer />
     </div>)
 }
