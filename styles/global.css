@@ -14,7 +14,7 @@ html,
   fill: #444444;
 }
 .kit-bg {
-  fill: #99ccaa;
+  fill: #ffccaa;
 }
 .bath-bg {
   fill: #99cccc;
@@ -44,7 +44,7 @@ html,
   fill: #ff5500;
 }
 .liv-bg {
-  fill: #ffccaa;
+  fill: #99ccaa;
 }
 .frames {
   fill: black;
@@ -105,7 +105,7 @@ html,
   fill: #ee7700;
 }
 .kitchen:hover .kit-bg {
-  fill: #77bb99;
+  fill: #ffbb88;
 }
 .kid-room:hover .kid {
   fill: #3388cc;
@@ -117,7 +117,7 @@ html,
   fill: #225555;
 }
 .living:hover .liv-bg {
-  fill: #ffbb88;
+  fill: #77bb99;
 }
 .entrance:hover .hall {
   fill: #882222;
@@ -141,14 +141,15 @@ html,
   fill: #ff4400;
 }
 
-.wrapper {
-  position: absolute;
-  top: 15px;
-  left: 40px;
+/* .wrapper {
   perspective: 1000px;
-}
+} */
 
 .plan {
   transform: rotateX(50deg) rotate(-20deg) skewX(3deg) skewY(-0.85deg)
-    scaleX(0.95);
+    scale(1.5);
+}
+
+.cls-1 {
+  fill: #1c8a87;
 }
