@@ -9,9 +9,9 @@ export default function Home() {
       </Head>
 
       <div className='w-screen h-64 '>
-        <h1 className="text-3xl font-bold ">
+        <h2 className="text-2xl font-bold ">
           Making myself useful
-        </h1>
+        </h2>
         <p className="description">
           Tending to my things:
         </p>

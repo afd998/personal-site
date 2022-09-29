@@ -5,7 +5,7 @@ function Map() {
   const router = useRouter();
   return (
     <svg
-      className="plan  lg:w-1/2 md:w-2/3 w-5/6 landscape:w-1/2 "
+      className="plan  lg:w-1/2 md:w-2/3 w-3/4 landscape:w-1/2 "
       xmlns="http://www.w3.org/2000/svg"
       xmlSpace="preserve"
       version="1.1"
