@@ -9,7 +9,7 @@ function Footer() {
   //source
   //resume
   return (
-    <div className="w-full flex-col sm:flex-row flex sm:justify-between flex-wrap items-center">
+    <div className="w-full flex-col sm:flex-row flex sm:justify-between flex-wrap items-center z-20 px-2 ">
       <div>
         Desgined and Built by{" "}
         <Link href="/">
@@ -21,7 +21,7 @@ function Footer() {
       <div className="flex space-x-3">
         <a href="https://github.com/afd998">
           {" "}
-          <GithubIcon className="w-5 h-5 dark:fill-white" />
+          <GithubIcon className="w-5 h-5 dark:fill-white " />
         </a>
         <a href="https://www.linkedin.com/in/atticus-deutsch-537699102/">
           <LinkedinIcon className="w-5 h-5" />
