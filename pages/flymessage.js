@@ -1,10 +1,11 @@
 import React from 'react'
+import Project from '../components/Project'
 
-function Meta() {
+function FlyMessage() {
   let projectData = {
-    name: { text: "This Website", link: "/" },
+    name: { text: "FlyMessage", link: "" },
     desc: "Custom web-app for user's journey toward a certification in Mind- Body Medicine.",
-    client: { text: "The Center for Mind-Body Medicine", link: "" },
+    client: { text: "Atticus Deutsch", link: "/" },
 
   }
   return (
@@ -12,4 +13,4 @@ function Meta() {
   )
 }
 
-export default Meta
+export default FlyMessage

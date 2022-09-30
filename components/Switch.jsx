@@ -59,7 +59,7 @@ const Switch = () => {
       onChange={(e) => handleChange(e)}
       checked={mode}
       value="idk"
-      className=" relative appearance-none h-4 w-8 bg-slate-400 rounded-full checked:bg-black transition duration-200 after:h-4 after:w-4 after:rounded-full after:bg-white after:absolute after:scale-110 checked:after:transform checked:after:scale-110  checked:after:translate-x-4"
+      className=" relative appearance-none h-4 w-8 bg-gray-800 rounded-full checked:bg-white transition duration-200 after:h-4 after:w-4 after:rounded-full after:bg-gray-700 after:absolute after:scale-110 checked:after:transform checked:after:scale-110  checked:after:translate-x-4"
       type="checkbox"
     />
   );

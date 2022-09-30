@@ -141,9 +141,9 @@ html,
   fill: #ff4400;
 }
 
-/* .wrapper {
+.wrapper {
   perspective: 1000px;
-} */
+}
 
 .plan {
   transform: rotateX(50deg) rotate(-20deg) skewX(3deg) skewY(-0.85deg);
