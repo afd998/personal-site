@@ -1,16 +1,29 @@
 import React from 'react'
-import Project from '../components/Project'
 
-function FlyMessage() {
-  let projectData = {
-    name: { text: "FlyMessage", link: "" },
-    desc: "Custom web-app for user's journey toward a certification in Mind- Body Medicine.",
-    client: { text: "Atticus Deutsch", link: "/" },
+function FlyMessage({ projectData }) {
 
-  }
   return (
-    <Project projectData={projectData} />
+    <div></div>
   )
 }
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      projectData: {
+        name: { text: "FlyMessage", link: "" },
+        desc: "Custom web-app for user's journey toward a certification in Mind- Body Medicine",
+        client: { text: "Atticus Deutsch", link: "/" },
+        technology: {
+          frontend: "",
+          backend: "",
+        },
+        type: "iOS App"
+
+      }
+    },
+  }
+}
+
 
 export default FlyMessage

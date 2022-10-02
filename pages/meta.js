@@ -1,15 +1,29 @@
 import React from 'react'
-import Project from '../components/Project'
-function Meta() {
-  let projectData = {
-    name: { text: "This Website", link: "/" },
-    desc: "Custom web-app for user's journey toward a certification in Mind- Body Medicine.",
-    client: { text: "The Center for Mind-Body Medicine", link: "" },
 
-  }
+function Meta({ projectData }) {
+
   return (
-    <Project projectData={projectData} />
+    <div></div>
   )
 }
+
+export async function getStaticProps(context) {
+  return {
+    props: {
+      projectData: {
+        name: { text: "Meta", link: "/" },
+        desc: "Custom web-app for user's journey toward a certification in Mind- Body Medicine",
+        client: { text: "Atticus Deutsch", link: "/" },
+        technology: {
+          frontend: "",
+          backend: "",
+        },
+        type: "Website"
+
+      }
+    },
+  }
+}
+
 
 export default Meta
