@@ -12,7 +12,7 @@ export async function getStaticProps(context) {
     props: {
       projectData: {
         name: { text: "FlyMessage", link: "" },
-        desc: "Custom web-app for user's journey toward a certification in Mind- Body Medicine",
+        desc: "The first diagonal app for the IPhone",
         client: { text: "Atticus Deutsch", link: "/" },
         technology: {
           frontend: "",

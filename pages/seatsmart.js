@@ -12,7 +12,7 @@ export async function getStaticProps(context) {
     props: {
       projectData: {
         name: { text: "SeatSmart", link: "https://seatingsmart-15114.firebaseapp.com/home" },
-        desc: "SeatSmart is an app for educators to randomize group or team membership in a class or  according to diversity characteristics.",
+        desc: "Create classroom seating charts according to diversity characteristics.",
         client: { text: "Atticus Deutsch", link: "/" },
         technology: {
           frontend: "",

@@ -8,7 +8,7 @@ function Project({ projectData }) {
     <div className="w-full">
       <div
         id="header"
-        className=" pt-16 px-12 sm:px-32 md:px-40 lg:px-56 xl:px-64 2xl:px-64  flex md:flex-row flex-col justify-between md:items-center space-y-16 "
+        className=" pt-16 px-12 sm:px-16 md:px-40 lg:px-56 xl:px-64 2xl:px-64  flex md:flex-row flex-col justify-between items-center space-y-16 "
       >
         <div id="title" className="flex flex-col justify-between max-w-fit">
           <h2 className="text-gray-700 text-xs font-bold dark:text-gray-900 self-end mb-1">
@@ -16,7 +16,7 @@ function Project({ projectData }) {
           </h2>
           <a
             href={projectData.name.link}
-            className=" hover:underline text-5xl xl:text-6xl  w-max"
+            className=" hover:underline text-5xl lg:text-6xl  w-max"
           >
             {projectData.name.text}
           </a>
@@ -29,13 +29,13 @@ function Project({ projectData }) {
         </div>
         <div
           id="right-panel"
-          className="text-2xl flex flex-col items-end space-y-6 md:space-y-10  self-end sm:self-auto"
+          className="text-2xl flex md:flex-col w-full flex-row-reverse items-end justify-evenly md:space-y-0  self-end sm:self-auto"
         >
           <div
             id="type"
-            className="flex flex-col justify-start self-end items-start"
+            className="flex flex-col justify-start self-start md:self-end items-start"
           >
-            <h4 className="text-gray-700 text-xs font-bold  dark:text-gray-900  ">
+            <h4 className="text-gray-700 text-xs font-bold mb-1 dark:text-gray-900  ">
               {/* DESC: */} PLATFORM
             </h4>
             <div className="flex  justify-end items-center ">
@@ -53,14 +53,14 @@ function Project({ projectData }) {
           </div>{" "}
           <div
             id="summary"
-            className="flex flex-col sm:items-start md:flex-col-reverse items-center m:static w-5/6 self-end md:w-2/3 "
+            className="flex flex-col sm:items-start m:static w-1/2 self-start md:self-end sm:w-2/3 lg:w-1/2 "
           >
             {" "}
-            <p className="text-xs font-bold self-start md:self-end text-gray-700 dark:text-gray-900 mt-2 mb-2 ">
+            <p className="text-xs font-bold self-start md:self-start   text-gray-600 dark:text-gray-900 mb-2 ">
               {" "}
               SUMMARY
             </p>
-            <p className=" md:text-3xl text-xl text-right ">
+            <p className=" lg:text-4xl md:text-3xl text-xl text-left md:text-right ">
               {projectData.desc}
             </p>{" "}
           </div>
