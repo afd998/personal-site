@@ -5,7 +5,7 @@ import Switch from "./Switch";
 function Header() {
   return (
     <div
-      className={`text-3xl font-bold underline  bg-red-700 dark:bg-blue-700 flex justify-between pr-3 pl-3 py-2`}
+      className={`text-3xl font-bold underline flex justify-between pr-3 pl-3 py-2`}
     >
       <Link href="/">
         <h1 className=" inline hover:cursor-pointer ">Atticus Deutsch </h1>

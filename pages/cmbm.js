@@ -13,7 +13,7 @@ const projectData = {
   color: "green-200"
 }
 const Summary = () => {
-  return <p>The online hub for your education in <span className=" font-bold "> Mind-Body Medicine</span></p>
+  return <p>The online hub <br /> for your education in <br /><span className=" font-bold "> Mind-Body Medicine</span></p>
 }
 function Cmbm({ projectData }) {
   return (

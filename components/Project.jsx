@@ -8,7 +8,7 @@ function Project({ projectData, summary: Summary }) {
     <div className="w-full">
       <div
         id="header"
-        className=" pt-16 px-12 sm:px-16 md:px-40 lg:px-56 xl:px-64 2xl:px-64  flex flex-col md:flex-row  justify-between items-center space-y-16 md:space-y-0 "
+        className=" pt-16 flex flex-col md:flex-row  justify-around  items-center space-y-16 md:space-y-0  md:space-x-20"
       >
         <div id="title" className="flex flex-col justify-between max-w-fit">
           <h2 className="text-gray-700 text-xs font-bold dark:text-gray-900 self-end mb-1">
@@ -29,7 +29,7 @@ function Project({ projectData, summary: Summary }) {
         </div>
         <div
           id="right-panel"
-          className="text-2xl flex w-full flex-row-reverse items-end justify-evenly md:justify-center md:flex-col md:space-y-0  self-center "
+          className="flex flex-row-reverse md:flex-col justify-evenly self-center w-full md:w-auto px-4 md:px-0 gap-x-6"
         >
           <div
             id="type"
@@ -39,7 +39,7 @@ function Project({ projectData, summary: Summary }) {
               {/* DESC: */} PLATFORM
             </h4>
             <div className="flex justify-end items-center whitespace-nowrap ">
-              <h3>{projectData.type}</h3>
+              <h3 className="text-2xl">{projectData.type}</h3>
               {projectData.type == "Web App" && (
                 <MdComputer className="dark:fill-white fill-black w-10 h-10 ml-3" />
               )}{" "}
@@ -53,14 +53,14 @@ function Project({ projectData, summary: Summary }) {
           </div>{" "}
           <div
             id="summary"
-            className=" flex flex-col sm:items-start m:static w-1/2 self-start md:self-end sm:max-w-1/3  md:w-2/3 lg:w-2/3 xl:w-1/2 ab"
+            className=" flex flex-col sm:items-start m:static self-start md:self-end  "
           >
             {" "}
-            <p className="text-xs font-bold self-start  text-gray-600 dark:text-gray-900 mb-2">
+            <p className="text-xs font-bold self-start  text-gray-600 dark:text-gray-900 mb-2 md:mb-0">
               {" "}
               SUMMARY
             </p>
-            <div className=" lg:text-4xl md:text-3xl text-xl text-left  md:text-right md:self-end ">
+            <div className=" md:whitespace-nowrap lg:text-4xl md:text-3xl text-xl text-left  md:text-right md:self-end ">
               {/* {projectData.desc} */} <Summary />
             </div>{" "}
           </div>

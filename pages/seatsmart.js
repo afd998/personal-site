@@ -21,7 +21,7 @@ function SeatSmart({ projectData }) {
 
 }
 const Summary = () => {
-  return <p> Create classroom  <span className='font-bold'> seating charts </span> according to diversity characteristics </p >
+  return <p> Create classroom  <span className='font-bold'> seating charts </span> <br /> according to diversity characteristics </p >
 }
 
 
