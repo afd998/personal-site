@@ -8,15 +8,14 @@ const MyApp = ({ Component, pageProps }) => {
   console.log(Component)
   console.log(pageProps)
 
-  const [backgroundColor, setBackgroundColor] = useState("");
 
   return (
     <div className=" min-h-screen dark:text-white dark:bg-gray-600 flex flex-col justify-between relative">
       <div >
-        <Header backgroundColor={backgroundColor} />
+        <Header />
         <div className=" ">
           {Component.name !== "Home" && <Project {...pageProps} />}
-          <Component {...pageProps} setBackgroundColor={setBackgroundColor} />
+          <Component {...pageProps} />
         </div>
       </div>
       <div className=" md:px-20 lg:pr-28">      <Footer />

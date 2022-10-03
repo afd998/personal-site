@@ -12,7 +12,7 @@ export async function getStaticProps(context) {
     props: {
       projectData: {
         name: { text: "Meta", link: "/" },
-        desc: "Custom web-app for user's journey toward a certification in Mind- Body Medicine",
+        desc: "Portfolio of work by Atticus",
         client: { text: "Atticus Deutsch", link: "/" },
         technology: {
           frontend: "",

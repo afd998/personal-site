@@ -38,7 +38,7 @@ function Project({ projectData }) {
             <h4 className="text-gray-700 text-xs font-bold mb-1 dark:text-gray-900  ">
               {/* DESC: */} PLATFORM
             </h4>
-            <div className="flex  justify-end items-center ">
+            <div className="flex justify-end items-center   whitespace-nowrap ">
               <h3>{projectData.type}</h3>
               {projectData.type == "Web App" && (
                 <MdComputer className="dark:fill-white fill-black w-10 h-10 ml-3" />
@@ -53,14 +53,14 @@ function Project({ projectData }) {
           </div>{" "}
           <div
             id="summary"
-            className="flex flex-col sm:items-start m:static w-1/2 self-start md:self-end sm:w-2/3 lg:w-1/2 "
+            className=" flex flex-col sm:items-start m:static w-1/2 self-start md:self-end sm:max-w-1/3  md:w-2/3 lg:w-2/3 xl:w-1/2 ab"
           >
             {" "}
-            <p className="text-xs font-bold self-start md:self-start   text-gray-600 dark:text-gray-900 mb-2 ">
+            <p className="text-xs font-bold self-start  text-gray-600 dark:text-gray-900 mb-2">
               {" "}
               SUMMARY
             </p>
-            <p className=" lg:text-4xl md:text-3xl text-xl text-left md:text-right ">
+            <p className=" lg:text-4xl md:text-3xl text-xl text-left  md:text-right md:self-end ">
               {projectData.desc}
             </p>{" "}
           </div>

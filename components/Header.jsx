@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import Link from "next/link";
 import DarkModeIcon from "../public/icons/DarkMode.svg";
 import Switch from "./Switch";
-function Header({ backgroundColor }) {
+function Header() {
   return (
     <div
-      className={`text-3xl font-bold underline bg-${backgroundColor} dark:bg-blue-700 flex justify-between pr-3 pl-3 py-2`}
+      className={`text-3xl font-bold underline  bg-red-700 dark:bg-blue-700 flex justify-between pr-3 pl-3 py-2`}
     >
       <Link href="/">
         <h1 className=" inline hover:cursor-pointer ">Atticus Deutsch </h1>
