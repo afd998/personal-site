@@ -9,16 +9,16 @@ function Footer() {
   //source
   //resume
   return (
-    <div className="w-full flex-col flex  sm:items-end flex-wrap items-center z-20 py-8">
-      <div className="pr-4">
+    <div className="py-8 text-xs md:text-base">
+      <div id="line1" className="">
         Desgined and Built by{" "}
         <Link href="/">
-          <span className=" hover:underline cursor-pointer text-2xl">
+          <span className=" hover:underline cursor-pointer  text-xl md:text-2xl">
             Atticus Deutsch
           </span>
         </Link>
       </div>
-      <div className="flex space-x-3 items-center ">
+      <div id="line2" className="flex space-x-3 items-center pl-10">
         <a href="https://github.com/afd998">
           {" "}
           <GithubIcon className="w-5 h-5 dark:fill-white " />

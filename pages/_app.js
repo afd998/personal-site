@@ -18,7 +18,8 @@ const MyApp = ({ Component, pageProps }) => {
           <Component {...pageProps} />
         </div>
       </div>
-      <div className=" md:px-20 lg:pr-28">      <Footer />
+      <div className="flex justify-center md:justify-end md:px-20 lg:pr-28">
+        <Footer />
       </div>
     </div>)
 }
