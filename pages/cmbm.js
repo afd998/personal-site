@@ -1,9 +1,25 @@
 import React from 'react'
-import Carousel from '../components/Carousel'
-function Cmbm({ projectData }) {
+import Project from '../components/Project'
 
+const projectData = {
+  name: { text: "CMBM Digital", link: "https://cmbmbox.vercel.app/" },
+  desc: "The online hub for your education in Mind-Body Medicine",
+  client: { text: "The Center for Mind-Body Medicine", link: "" },
+  technology: {
+    frontend: "",
+    backend: "",
+  },
+  type: "Web App",
+  color: "green-200"
+}
+const Summary = () => {
+  return <p>The online hub for your education in <span className=" font-bold "> Mind-Body Medicine</span></p>
+}
+function Cmbm({ projectData }) {
   return (
+
     <div>
+      <Project summary={Summary} projectData={projectData}> </Project>
       <div className="w-full mt-20 flex flex-col justify-center space-y-16">
         {" "}
         {/* <Carousel /> */}
@@ -13,20 +29,13 @@ function Cmbm({ projectData }) {
       </div>
     </div>)
 }
+
+
 export async function getStaticProps(context) {
   return {
     props: {
-      projectData: {
-        name: { text: "CMBM Digital", link: "https://cmbmbox.vercel.app/" },
-        desc: "The online hub for your education in Mind-Body Medicine",
-        client: { text: "The Center for Mind-Body Medicine", link: "" },
-        technology: {
-          frontend: "",
-          backend: "",
-        },
-        type: "Web App",
-        color: "green-200"
-      }
+      projectData: projectData
+
     },
   }
 }

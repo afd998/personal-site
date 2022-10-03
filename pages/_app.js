@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }) => {
       <div >
         <Header />
         <div className=" ">
-          {Component.name !== "Home" && <Project {...pageProps} />}
+          {/* {Component.name !== "Home" && <Project {...pageProps} />} */}
           <Component {...pageProps} />
         </div>
       </div>

@@ -3,12 +3,12 @@ import Carousel from "./Carousel";
 import { MdComputer } from "react-icons/md";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
-function Project({ projectData }) {
+function Project({ projectData, summary: Summary }) {
   return (
     <div className="w-full">
       <div
         id="header"
-        className=" pt-16 px-12 sm:px-16 md:px-40 lg:px-56 xl:px-64 2xl:px-64  flex md:flex-row flex-col justify-between items-center space-y-16 "
+        className=" pt-16 px-12 sm:px-16 md:px-40 lg:px-56 xl:px-64 2xl:px-64  flex flex-col md:flex-row  justify-between items-center space-y-16 md:space-y-0 "
       >
         <div id="title" className="flex flex-col justify-between max-w-fit">
           <h2 className="text-gray-700 text-xs font-bold dark:text-gray-900 self-end mb-1">
@@ -29,7 +29,7 @@ function Project({ projectData }) {
         </div>
         <div
           id="right-panel"
-          className="text-2xl flex md:flex-col w-full flex-row-reverse items-end justify-evenly md:space-y-0  self-end sm:self-auto"
+          className="text-2xl flex w-full flex-row-reverse items-end justify-evenly md:justify-center md:flex-col md:space-y-0  self-center "
         >
           <div
             id="type"
@@ -38,7 +38,7 @@ function Project({ projectData }) {
             <h4 className="text-gray-700 text-xs font-bold mb-1 dark:text-gray-900  ">
               {/* DESC: */} PLATFORM
             </h4>
-            <div className="flex justify-end items-center   whitespace-nowrap ">
+            <div className="flex justify-end items-center whitespace-nowrap ">
               <h3>{projectData.type}</h3>
               {projectData.type == "Web App" && (
                 <MdComputer className="dark:fill-white fill-black w-10 h-10 ml-3" />
@@ -60,9 +60,9 @@ function Project({ projectData }) {
               {" "}
               SUMMARY
             </p>
-            <p className=" lg:text-4xl md:text-3xl text-xl text-left  md:text-right md:self-end ">
-              {projectData.desc}
-            </p>{" "}
+            <div className=" lg:text-4xl md:text-3xl text-xl text-left  md:text-right md:self-end ">
+              {/* {projectData.desc} */} <Summary />
+            </div>{" "}
           </div>
         </div>{" "}
         {/* <div className="text-2xl">
