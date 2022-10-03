@@ -8,32 +8,43 @@ function Project({ projectData, summary: Summary }) {
     <div className="w-full">
       <div
         id="header"
-        className=" pt-16 flex flex-col md:flex-row  justify-around  items-center space-y-16 md:space-y-0  md:space-x-20"
+        className=" pt-16 flex flex-col items-center space-y-16  md:flex-row  md:justify-around md:space-y-0  md:space-x-20"
       >
-        <div id="title" className="flex flex-col justify-between max-w-fit">
-          <h2 className="text-gray-700 text-xs font-bold dark:text-gray-900 self-end mb-1">
-            PROJECT
-          </h2>
-          <a
-            href={projectData.name.link}
-            className=" hover:underline text-5xl lg:text-6xl  w-max"
+        <div
+          id="title and summary"
+          className="flex flex-col items-center w-min "
+        >
+          <div
+            id="title"
+            className="flex flex-col justify-between max-w-fit mr-20 "
           >
-            {projectData.name.text}
-          </a>
-          <h2 className="mt-2 text-sm text-gray-700 dark:text-gray-200">
-            Client:{" "}
-            <a href={projectData.client.link} className=" hover:underline  ">
-              {projectData.client.text}
+            <h2 className="text-gray-700 text-xs font-bold dark:text-gray-900 self-end mb-1">
+              PROJECT
+            </h2>
+            <a
+              href={projectData.name.link}
+              className=" hover:underline text-4xl  md:text-5xl lg:text-6xl whitespace-nowrap  font-serif font-black"
+            >
+              {projectData.name.text}
             </a>
-          </h2>
+          </div>
+          <div id="summary" className=" -mt-4 self-end">
+            <p className="text-xs font-bold text-right text-gray-600 dark:text-gray-900  ">
+              {" "}
+              SUMMARY
+            </p>
+            <div className="mt-1  text-gray-700 dark:text-white  md:text-3xl lg:text-4xl text-2xl text-right ">
+              <Summary />
+            </div>{" "}
+          </div>
         </div>
         <div
           id="right-panel"
-          className="flex flex-row-reverse md:flex-col justify-evenly self-center w-full md:w-auto px-4 md:px-0 gap-x-6"
+          className="flex flex-row-reverse justify-evenly self-center w-full px-4 gap-x-6 md:flex-col md:w-auto md:px-0 "
         >
           <div
             id="type"
-            className="flex flex-col justify-start self-start md:self-end items-start"
+            className="flex flex-col  self-start md:self-end items-start border-black border-4 p-2 rounded-2xl"
           >
             <h4 className="text-gray-700 text-xs font-bold mb-1 dark:text-gray-900  ">
               {/* DESC: */} PLATFORM
@@ -44,25 +55,26 @@ function Project({ projectData, summary: Summary }) {
                 <MdComputer className="dark:fill-white fill-black w-10 h-10 ml-3" />
               )}{" "}
               {projectData.type == "iOS App" && (
-                <IoPhonePortraitOutline className="dark:fill-white fill-black w-8 h-7 ml-2" />
+                <IoPhonePortraitOutline className="dark:fill-white fill-black w-7 h-7 ml-2" />
               )}
               {projectData.type == "Website" && (
                 <CgWebsite className="dark:fill-white fill-black w-8 h-7 ml-2" />
               )}
             </div>
-          </div>{" "}
+          </div>
           <div
-            id="summary"
-            className=" flex flex-col sm:items-start m:static self-start md:self-end  "
+            id="client"
+            className="flex flex-col self-start md:self-end items-start border-black border-4 p-2 rounded-2xl"
           >
-            {" "}
-            <p className="text-xs font-bold self-start  text-gray-600 dark:text-gray-900 mb-2 md:mb-0">
-              {" "}
-              SUMMARY
-            </p>
-            <div className=" md:whitespace-nowrap lg:text-4xl md:text-3xl text-xl text-left  md:text-right md:self-end ">
-              {/* {projectData.desc} */} <Summary />
-            </div>{" "}
+            <h2 className="text-gray-700 text-xs font-bold dark:text-gray-900  mb-1">
+              CLIENT{" "}
+            </h2>
+            <a
+              href={projectData.client.link}
+              className=" text-2xl hover:underline  "
+            >
+              {projectData.client.text}
+            </a>
           </div>
         </div>{" "}
         {/* <div className="text-2xl">

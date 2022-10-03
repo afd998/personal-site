@@ -21,7 +21,7 @@ function FlyMessage({ projectData }) {
 }
 
 const Summary = () => {
-  return <p>The first <span className=" transform rotate-6 inline-block  px-2">  diagonal </span> app <br className=' xl:hidden' /> for the IPhone </p >
+  return <p>The <span className=" font-bold ">first </span> <span className="  -rotate-3 inline-block  px-1">  diagonal </span> app <br className=' hidden md:visible xl:hidden' /> for the IPhone </p >
 }
 
 export async function getStaticProps(context) {

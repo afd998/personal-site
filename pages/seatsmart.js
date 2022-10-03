@@ -3,7 +3,7 @@ import Project from '../components/Project'
 let projectData = {
   name: { text: "SeatSmart", link: "https://seatingsmart-15114.firebaseapp.com/home" },
   desc: "Create classroom seating charts according to diversity characteristics.",
-  client: { text: "Atticus Deutsch", link: "/" },
+  client: { text: "Erica Thompson", link: "/" },
   technology: {
     frontend: "",
     backend: "",
@@ -21,7 +21,7 @@ function SeatSmart({ projectData }) {
 
 }
 const Summary = () => {
-  return <p> Create classroom  <span className='font-bold'> seating charts </span> <br /> according to diversity characteristics </p >
+  return <p> Create classroom  <span className='font-bold'> seating charts </span> <br className='hidden  md:visible' /> according to diversity characteristics </p >
 }
 
 
