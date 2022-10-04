@@ -13,21 +13,22 @@ const projectData = {
   color: "green-200"
 }
 const Summary = () => {
-  return <p>The online hub <br className='hidden md:visible' /> for your education in <br className=' hidden' /> <span className=" font-bold "> Mind-Body Medicine</span></p>
+  return <p className='text-lg'>The online hub <br className='hidden md:visible' /> for your education in <br className=' hidden' /> <span className=" font-bold "> Mind-Body Medicine</span></p>
 }
 function Cmbm({ projectData }) {
   return (
-
     <div>
-      <Project summary={Summary} projectData={projectData}> </Project>
-      <div className="w-full mt-20 flex flex-col justify-center space-y-16">
-        {" "}
-        {/* <Carousel /> */}
-        <img src="/images/cmbm/1.png" className='rounded-2xl mx-10 md:mx-40 shadow-2xl' />
-        <img src="/images/cmbm/3.png" className='rounded-2xl mx-10 md:mx-40 shadow-2xl' />
-        <img src="/images/cmbm/4.png" className='rounded-2xl mx-10 md:mx-40 shadow-2xl' />
-      </div>
-    </div>)
+      <Project summary={Summary} projectData={projectData}>
+        <div id="sidebar" className=' relative self-center mt-24'>
+          <img src="/images/cmbm/sidebar.png" alt="sidebar" className=' shadow-2xl rounded-xl  w-36 ' />
+          <p className='text-lg absolute top-24 text-right right-40'> <span className='font-bold '>Complete stages to advance </span> toward a certification in Mind-Body Medicine </p>
+          <p className='text-lg absolute top-80 left-32'><span className='font-bold text-xs'> ROLES </span> <br /> <span className='font-bold '> Every user is a student,</span>  but Teachers and Admin see additonal functionality</p>
+
+          <img src="/images/cmbm/roles-extra.png" alt="sidebar" className=' -bottom-80 -left-32 absolute w-96  max-w-none' />
+        </div>
+      </Project >
+    </div >
+  )
 }
 
 
