@@ -10,7 +10,7 @@ const MyApp = ({ Component, pageProps }) => {
 
 
   return (
-    <div className=" min-h-screen dark:text-white dark:bg-gray-600 flex flex-col justify-between relative">
+    <div className=" min-h-screen dark:text-white dark:bg-gray-600 flex flex-col justify-between relative ">
       <div >
         <Header />
         <div className=" ">

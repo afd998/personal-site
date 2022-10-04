@@ -2,7 +2,7 @@ import React from 'react'
 import Project from '../components/Project'
 
 let projectData = {
-  name: { text: "Meta", link: "/" },
+  name: { text: "This Website", link: "/" },
   desc: "Portfolio of work by Atticus Detusch",
   client: { text: "Atticus Deutsch", link: "/" },
   technology: {
