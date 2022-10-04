@@ -20,11 +20,15 @@ function Cmbm({ projectData }) {
     <div>
       <Project summary={Summary} projectData={projectData}>
         <div id="sidebar" className=' relative self-center mt-24'>
-          <img src="/images/cmbm/sidebar.png" alt="sidebar" className=' shadow-2xl rounded-xl  w-36 ' />
+          <img src="/images/cmbm/sidebar.png" alt="sidebar" className=' shadow-2xl rounded-xl w-36 ' />
           <p className='text-lg absolute top-24 text-right right-40'> <span className='font-bold '>Complete stages to advance </span> toward a certification in Mind-Body Medicine </p>
           <p className='text-lg absolute top-80 left-32'><span className='font-bold text-xs'> ROLES </span> <br /> <span className='font-bold '> Every user is a student,</span>  but Teachers and Admin see additonal functionality</p>
-
           <img src="/images/cmbm/roles-extra.png" alt="sidebar" className=' -bottom-80 -left-32 absolute w-96  max-w-none' />
+        </div>
+        <div id="schedule" className=' relative self-center mt-96'>
+          <p className='text-lg  top-24 text-right right-40'> <span className='font-bold '>Complete stages to advance </span> toward a certification in Mind-Body Medicine </p>
+          <p className='text-lg  top-80 left-32'><span className='font-bold text-xs'> ROLES </span> <br /> <span className='font-bold '> Every user is a student,</span>  but Teachers and Admin see additonal functionality</p>
+          <img src="/images/cmbm/schedule.png" alt="sidebar" className=' shadow-2xl rounded-xl  w-36 ' />
         </div>
       </Project >
     </div >
