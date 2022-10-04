@@ -18,13 +18,13 @@ const Summary = () => {
 function Cmbm({ projectData }) {
   return (
     <div className='z-10'>
-      <div className='w-screen'>
-        <p className=' opacity-5 text-9xl italic whitespace-nowrap  overflow-hidden rotate-45 z-0 absolute  top-1/4 left-1/2 transform  -translate-x-1/2 -translate-y-1/2' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
-        <p className='opacity-5 text-9xl italic whitespace-nowrap  overflow-hidden rotate-45 z-0 absolute top-2/4 left-1/2 transform  -translate-x-1/2 -translate-y-1/2' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
-        <p className=' opacity-5 text-9xl italic whitespace-nowrap  overflow-hidden rotate-45 z-0 absolute  top-3/4 left-1/2 transform  -translate-x-1/2 -translate-y-1/2' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
-        <img src="/images/cmbm/brand-mark.png" className=' opacity-5 text-9xl italic whitespace-nowrap overflow-hidden  z-0 absolute w-96 top-[15%] left-full transform  -translate-x-1/2 -translate-y-1/2' />
-        <img src="/images/cmbm/brand-mark.png" className=' opacity-5 text-9xl italic whitespace-nowrap overflow-hidden  z-0 absolute w-96 top-[35%]  transform  -translate-x-1/2 -translate-y-1/2' />
-        <img src="/images/cmbm/brand-mark.png" className=' opacity-5 text-9xl italic whitespace-nowrap overflow-hidden  z-0 absolute w-96 top-[60%] left-full transform  -translate-x-1/2 -translate-y-1/2' />
+      <div className=' z-0 w-full  relative'>
+        <p className='w-screen opacity-5 text-9xl italic whitespace-nowrap  text-clip overflow-hidden rotate-45 absolute  top-[200px] left-1/2 transform  -translate-x-1/2 -translate-y-1/2' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
+        <p className=' w-screen  opacity-5 text-9xl italic whitespace-nowrap  text-clip overflow-hidden rotate-45 absolute top-[800px] left-1/2 transform  -translate-x-1/2 -translate-y-1/2' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
+        <p className='w-screen  opacity-5 text-9xl italic whitespace-nowrap  text-clip overflow-hidden rotate-45  absolute  top-[1400px] left-1/2 transform  -translate-x-1/2 -translate-y-1/2' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
+        {/* <img src="/images/cmbm/brand-mark.png" className=' opacity-5 text-9xl italic whitespace-nowrap overflow-hidden  absolute w-96 top-[15%] left-full transform  -translate-x-1/2 -translate-y-1/2' />
+        <img src="/images/cmbm/brand-mark.png" className=' opacity-5 text-9xl italic whitespace-nowrap overflow-hidden  absolute w-96 top-[35%]  transform  -translate-x-1/2 -translate-y-1/2' />
+        <img src="/images/cmbm/brand-mark.png" className=' opacity-5 text-9xl italic whitespace-nowrap overflow-hidden   absolute w-96 top-[60%] left-full transform  -translate-x-1/2 -translate-y-1/2' /> */}
 
       </div>
       <Project summary={Summary} projectData={projectData}>
