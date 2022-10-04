@@ -16,7 +16,8 @@ let projectData = {
 function FlyMessage({ projectData }) {
 
   return (
-    <div>  <Project summary={Summary} projectData={projectData}> </Project></div>
+    <div>        <p className=' opacity-5 text-9xl italic whitespace-nowrap overflow-clip rotate-45 z-0 absolute -left-36 p-10 top-96'> {projectData.name.text}</p>
+      <Project summary={Summary} projectData={projectData}> </Project></div>
   )
 }
 
