@@ -20,15 +20,15 @@ function Cmbm({ projectData }) {
     <div className=' '>
       <div className=' z-0 w-screen relative'>
 
-        <div className=' z-0 absolute flex flex-col justify-evenly items-center h-[300vh] w-full overflow-hidden text-7xl whitespace-nowrap italic text-clip text-center opacity-5'>
+        <div className=' z-0 absolute flex flex-col justify-evenly items-center h-[600vw] w-full overflow-hidden text-7xl whitespace-nowrap italic text-clip text-center opacity-5'>
           <p className=' py-10 w-[calc(200vw)]   overflow-hidden  rotate-45     ' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
           <p className='  py-10 w-[calc(200vw)]  overflow-hidden rotate-45   ' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
           <p className='  py-10 w-[calc(200vw)]  overflow-hidden rotate-45    ' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
         </div>
-        <div className=' z-0 absolute flex flex-col justify-evenly items-center h-[300vh] w-full overflow-hidden text-7xl whitespace-nowrap italic text-clip text-center opacity-5'>
-          <img src="/images/cmbm/brand-mark.png" className=' overflow-hidden  absolute w-96 top-[15%] self-end    translate-x-1/2 -translate-y-1/2' />
-          <img src="/images/cmbm/brand-mark.png" className=' overflow-hidden  absolute w-96 top-[35%] self-start  -translate-x-1/2 -translate-y-1/2' />
-          <img src="/images/cmbm/brand-mark.png" className=' overflow-hidden  absolute w-96 top-[60%] self-end  translate-x-1/2 -translate-y-1/2' />
+        <div className=' z-0 absolute flex  flex-col justify-between h-[600vw] w-full overflow-hidden opacity-5'>
+          <img src="/images/cmbm/brand-mark.png" className=' overflow-hidden   w-96  self-end    translate-x-1/2 translate-y-1/2' />
+          <img src="/images/cmbm/brand-mark.png" className=' overflow-hidden   w-96  self-start  -translate-x-1/2 translate-y-1/2' />
+          <img src="/images/cmbm/brand-mark.png" className=' overflow-hidden   w-96  self-end  translate-x-1/2 translate-y-1/2' />
         </div>
       </div>
       <Project summary={Summary} projectData={projectData}>
