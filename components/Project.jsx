@@ -15,7 +15,7 @@ function Project({ projectData, summary: Summary, children }) {
   }
 
   return (
-    <div className="w-full flex flex-col pt-16">
+    <div className="w-full flex flex-col pt-16 relative">
       <RightBox>
         <Label text="PROJECT" />
       </RightBox>
