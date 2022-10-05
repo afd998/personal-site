@@ -1,5 +1,4 @@
 import React from 'react'
-import Project from '../components/Project'
 
 let projectData = {
   name: { text: "This Website", link: "/" },
@@ -15,7 +14,7 @@ let projectData = {
 function Meta({ projectData }) {
 
   return (
-    <div>  <Project summary={Summary} projectData={projectData}> </Project></div>
+    <div>  </div>
   )
 }
 const Summary = () => {

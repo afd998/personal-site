@@ -1,5 +1,4 @@
 import React from 'react'
-import Project from '../components/Project'
 let projectData = {
   name: { text: "SeatSmart", link: "https://seatingsmart-15114.firebaseapp.com/home" },
   desc: "Create classroom seating charts according to diversity characteristics.",
@@ -16,7 +15,7 @@ function SeatSmart({ projectData }) {
 
 
   return (
-    <div>  <Project summary={Summary} projectData={projectData}> </Project></div>
+    <div> </div>
   )
 
 }
