@@ -1,6 +1,8 @@
 import React from 'react'
-import Project from '../components/Project'
-
+import { Background, Label, LeftBox, RightBox } from '../components/Project'
+import { MdComputer } from "react-icons/md";
+import { IoPhonePortraitOutline } from "react-icons/io5";
+import { CgWebsite } from "react-icons/cg";
 let projectData = {
   name: { text: "FlyMessage", link: "" },
   desc: "The first diagonal app for the IPhone",
@@ -9,25 +11,47 @@ let projectData = {
     frontend: "",
     backend: "",
   },
-  type: "iOS App"
+  type: "iOS App",
+  brandMark: "/images/flymessage/brand-mark.png"
 
 }
 
 function FlyMessage({ projectData }) {
 
   return (
-    <div>       <div className='z-10'>
-      <div className=' z-0 w-screen relative'>
-        <p className=' py-10 w-[calc(200vw)] text-center opacity-5 text-9xl italic whitespace-nowrap  text-clip overflow-hidden rotate-45 absolute  top-[200px] left-1/2 transform  -translate-x-1/2 -translate-y-1/2' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
-        <p className='  py-10 w-[calc(200vw)] text-center opacity-5 text-9xl italic whitespace-nowrap  text-clip overflow-hidden rotate-45 absolute top-[800px] left-1/2 transform  -translate-x-1/2 -translate-y-1/2' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
-        <p className='  py-10 w-[calc(200vw)] text-center opacity-5 text-9xl italic whitespace-nowrap  text-clip overflow-hidden rotate-45  absolute  top-[1400px] left-1/2 transform  -translate-x-1/2 -translate-y-1/2' > {projectData.name.text} {" "} {projectData.name.text} {" "} {projectData.name.text}</p>
-        {/* <img src="/images/cmbm/brand-mark.png" className=' opacity-5 text-9xl italic whitespace-nowrap overflow-hidden  absolute w-96 top-[15%] left-full transform  -translate-x-1/2 -translate-y-1/2' />
-        <img src="/images/cmbm/brand-mark.png" className=' opacity-5 text-9xl italic whitespace-nowrap overflow-hidden  absolute w-96 top-[35%]  transform  -translate-x-1/2 -translate-y-1/2' />
-        <img src="/images/cmbm/brand-mark.png" className=' opacity-5 text-9xl italic whitespace-nowrap overflow-hidden   absolute w-96 top-[60%] left-full transform  -translate-x-1/2 -translate-y-1/2' /> */}
-
-      </div>
+    <div className="w-full flex flex-col pt-16 relative">
+      <Background projectData={projectData} />
+      <RightBox>
+        <Label text="PROJECT" />
+      </RightBox>
+      <h1 className="text-4xl italic mt-2 ml-20 mb-20">
+        {" "}
+        {projectData.name.text}{" "}
+      </h1>
+      <RightBox>
+        <Label text="PLATFORM" />
+        <div className="flex justify-start self-end items-center whitespace-nowrap mb-16 ">
+          <h3 className="text-lg">{projectData.type}</h3>
+          {projectData.type == "Web App" && (
+            <MdComputer className="dark:fill-white fill-black w-7 h-7 ml-3" />
+          )}{" "}
+          {projectData.type == "iOS App" && (
+            <IoPhonePortraitOutline className="dark:fill-white fill-black w-8 h-7 ml-2" />
+          )}
+          {projectData.type == "Website" && (
+            <CgWebsite className="dark:fill-white fill-black w-8 h-7 ml-2" />
+          )}
+        </div>
+        <Label text="CLIENT" />
+        <p className="text-lg w-3/4"> {projectData.client.text} </p>
+      </RightBox>
+      <LeftBox>
+        <br className="mt-6" />
+        <Label text="SUMMARY" />
+        <Summary />
+      </LeftBox>
     </div>
-      <Project summary={Summary} projectData={projectData}> </Project></div>
+
   )
 }
 
