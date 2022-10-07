@@ -9,7 +9,7 @@ function Header() {
     >
       <Link href="/">
         <h1 className=" inline hover:cursor-pointer dark:text-gray-900 ">
-          Atticus Deutsch{" "}
+          {"< All Projects"}{" "}
         </h1>
       </Link>
       <div className=" flex justify-evenly items-center space-x-2">
