@@ -21,10 +21,10 @@ const projectData = {
 
 function Cmbm({ projectData }) {
   return (
-    <div className=' '>
-      <Sun className=" relative w-full top-[2800px] h-[9000px] left-1/2 -translate-x-1/2" />
+    <div className='dark:bg-gray-600 '>
+      <Sun className=" z-0 relative w-full top-[2800px] h-[9000px] left-1/2 -translate-x-1/2" />
       {/* <Background projectData={projectData} /> */}
-      <div className="  text-lg md:text-2xl w-full flex flex-col pt-16 absolute top-0 overflow-hidden  ">
+      <div className="  text-lg md:text-2xl w-full flex flex-col mt-16 absolute top-0 overflow-hidden  ">
         <RightBox>
           <Label text="PROJECT" />
         </RightBox>
@@ -47,18 +47,17 @@ function Cmbm({ projectData }) {
             )}
           </div>
           <Label text="CLIENT" />
-          <p className=" w-3/4"> {projectData.client.text} </p>
+          <p className="  z-40 w-3/4"> {projectData.client.text} </p>
         </RightBox>
-        <div className='w-1/2 flex flex-col self-start text-right'>
+        <div className=' z-40 w-1/2 flex flex-col self-start text-right'>
           <br className='mt-6' />
           <Label text="SUMMARY" />
-
           <p className='z-40 w-full md:w-1/2 self-end pl-10 '>The online hub <br className='hidden md:visible' /> for your education in <br className=' hidden' /> <span className=" font-bold "> Mind-Body Medicine</span></p>
         </div>
 
-        <div className=" md:-top-40 flex justify-center relative w-full h-[150vw] md:w-3/4 items-center md:h-[85vw] self-center bg-[url('/images/cmbm/star.svg')] bg-cover bg-center">
-          <img src="/images/cmbm/splash.png" alt="main pic" className=" z-10 w-full  md:w-3/4 rounded-3xl px-10" />
-          <div className='absolute w-1/4 right-[15%] bottom-1/4 z-20 flex flex-col' >
+        <div id="splash" className=" md:-top-40 flex justify-center relative w-full h-[150vw] md:w-3/4 items-center md:h-[85vw] self-center bg-[url('/images/cmbm/star.svg')] dark:bg-gray-600 bg-cover bg-center">
+          <img src="/images/cmbm/splash.png" alt="main pic" className=" z-0 w-full  md:w-3/4 rounded-3xl px-10" />
+          <div className='absolute w-1/4 right-[15%] bottom-1/4 z-0 flex flex-col' >
             <img src="/images/cmbm/dark-mode.png" alt="main pic" className=" rounded-xl" />
             <p className='text-xs self-end  relative -right-5 md:right-0'> <span className='font-bold'> Dark Mode <br /> </span> enabled </p>
           </div>
@@ -83,24 +82,12 @@ function Cmbm({ projectData }) {
         </div>
 
 
-        {/* <div id="sidebar expo" className=" overflow-visible relative bg-[url('/images/cmbm/star.svg')] w-full md:w-1/2 md:h-[60vw]  self-center h-[250vw] bg-center bg-no-repeat flex justify-center items-center">
-          <img src="/images/cmbm/sidebar.png" alt="sidebar" className='absolute  w-1/2 md:w-[20vw]' />
-          <img src="/images/cmbm/sidebar-lines.svg" alt="sidebar lines" className='pt-36 mt-20 absolute w-1/4 md:w-[10vw]' />
-
-          <p className='text-lg absolute left-[63%] md:left-[62%] top-[13%] md:top-[20%]'> The path to certification has <span className={`font-bold text-${projectData.color}-900`}>5 major stages</span>, all mediated by the app.          </p>
-          <p className='text-lg absolute top-[30%] md:top-[35%]  text-right right-[68%] md:right-[65%]'> <span className={`font-bold text-${projectData.color}-900`}>As students progress through the model </span> the Sidebar reflects their current stage.</p>
-          <div className='absolute top-[63%] md:top-[58%] left-[62%] md:left-[60%]'>
-            <p className='text-lg  w-10 '><span className='font-bold text-xs'> ROLES </span> <br /> <span className={`font-bold text-${projectData.color}-900`}> Signed on Teachers and Admininstrators</span> see additonal functionality</p>
-            <img src="/images/cmbm/roles-extra.png" alt="sidebar" className=' -bottom-[45%]  w-64  max-w-none' />
-          </div>
-        </div> */}
-
         <div id="sidebar expo" className=" px-3 relative w-full md:w-1/2  self-center  flex items-center justify-center ">
           <Star className="absolute z-0  left-[50%] -top-[50%] w-full md:w-2/3 -translate-x-1/2  translate-y-1/2 " />
           <img src="/images/cmbm/sidebar.png" alt="sidebar" className=' z-10  w-1/2 md:w-[20vw] ' />
-          <p className='z-20 text-[2vw] md:text-[13px]  leading-4 w-[30%] absolute left-[3%] md:left-[6%] top-[13%] md:top-[10%] -translate-y-1/2 bg-gray-100 p-2 rounded '> The path to certification has <span className={`font-bold`}>5 major stages</span>, all mediated by the app.          </p>
+          <p className='z-20 text-[2vw] md:text-[13px]  leading-4 w-[30%] absolute left-[3%] md:left-[6%] top-[13%] md:top-[10%] -translate-y-1/2 dark:bg-gray-800 bg-gray-100 p-2 rounded '> The path to certification has <span className={`font-bold`}>5 major stages</span>, all mediated by the app.          </p>
           <p className='z-20 text-[4vw] md:text-xl  absolute top-[30%] md:top-[35%]  text-right right-[68%] md:right-[65%]'> <span className={`font-bold text-${projectData.color}-900`}>As students progress through the model </span> the Sidebar reflects their current stage.</p>
-          <p className='z-20 text-[2vw] leading-4 md:text-[13px] absolute rounded p-2  w-[30%]   top-[39%] md:top-[46%]  text-left left-[66%] md:right-[10%] text-black bg-gray-100 '> When a <span className='font-bold '>locked</span>  stage is selected, students see an option to <span className='font-bold '> signup </span> or a <span className='font-bold '> special preview </span> </p>
+          <p className='z-20 text-[2vw] leading-4 md:text-[13px] absolute rounded p-2  w-[30%]   top-[39%] md:top-[42%]  text-left left-[66%] md:right-[10%] dark:bg-gray-800 bg-gray-100 '> When a <span className='font-bold '>locked</span>  stage is selected, students see an option to <span className='font-bold '> signup </span> or a <span className='font-bold '> special preview </span> </p>
 
           <div className=' text-[4vw] md:text-xl z-20 w-full absolute top-[63%] md:top-[58%] left-[62%] md:left-[60%]'>
             <p className='   w-[25%] sm:w-[10%]'><span className='font-bold text-xs'> ROLES </span> <br /> <span className={`font-bold text-${projectData.color}-900`}> Signed on Teachers and Admininstrators</span> see additonal functionality</p>

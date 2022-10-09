@@ -5,8 +5,7 @@ import "../styles/global.css"
 import Project from "../components/Project"
 
 const MyApp = ({ Component, pageProps }) => {
-  console.log(Component)
-  console.log(pageProps)
+
 
 
   return (
