@@ -9,7 +9,7 @@ function Footer() {
   //source
   //resume
   return (
-    <div className="py-8 text-xs md:text-base">
+    <div className="py-8 z-20 text-xs md:text-base">
       <div id="line1" className="">
         Desgined and Built by{" "}
         <Link href="/">
