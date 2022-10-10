@@ -5,7 +5,7 @@ import { IoPhonePortraitOutline } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
 import Star from "../public/images/cmbm/star.svg";
 import Sun from "../public/images/cmbm/sun.svg";
-
+import Footer from '../components/Footer';
 const projectData = {
   name: { text: "Mind-Body Center", link: "https://cmbmbox.vercel.app/" },
   desc: "The online hub for your education in Mind-Body Medicine",
@@ -22,7 +22,7 @@ const projectData = {
 function Cmbm({ projectData }) {
   return (
     <div className='dark:bg-gray-600 '>
-      < Sun className=" z-0 relative w-full top-[2400px] md:top-[2000px] 2xl:top-[2600px] h-[7000px] md:h-[6000px] left-1/2 -translate-x-1/2" />
+      {/* < Sun className=" z-0 relative w-full top-[2400px] md:top-[2000px] 2xl:top-[2600px] h-[7000px] md:h-[6000px] left-1/2 -translate-x-1/2" /> */}
       <div className="  text-lg md:text-2xl w-full flex flex-col mt-16 absolute top-0 overflow-hidden  ">
         <RightBox>
           <Label text="PROJECT" />
@@ -134,30 +134,51 @@ function Cmbm({ projectData }) {
               Therefore an important UI and logical component of the training is  <span className='font-bold'>  The Scheducle</span>
             </p>
           </div>
-          <img className=' md:w-3/4 md:-rotate-6   shadow-2xl left-1/2 z-30 rounded-2xl mt-5 sm:mt-10 xl:mt-20' src='/images/cmbm/8.png' alt="form pic2" />
+          <img className=' md:w-3/4 md:-rotate-6   shadow-2xl left-1/2 z-30 rounded-2xl mt-5 sm:mt-10 md:mt-20 xl:mt-20' src='/images/cmbm/8.png' alt="form pic2" />
 
         </div>
 
         <div className='w-1/2 flex  justify-end md: pl-10 -mt-24 md:mt-10'>
-          <p className='text-right md:w-3/4 xl:w-1/2'>The rest of the UI is extensive and when signed in as an admin supprots CRUD oppercations to add events events to the, create trainings. Update the list of factulty who will be teaching at the training, remove students, and more.        </p>
+          <p className='text-right md:w-3/4 xl:w-1/2'>The rest of the UI is extensive, and, when signed in as an admin, supports <span className='font-bold'>CRUD </span> opperations to add events  to the training's schedule, create trainings, update the list of factulty who will be teaching at the training, remove students, and more.</p>
         </div>
 
-        <img src="/images/cmbm/CRUD.png" className=' mt-10 w-3/4 md:w-1/2 xl:w-1/4  self-center' />
-        <div className='w-1/2 pl-10 self-end flex mt-24 md:mt-52'>
-          <p className='text-left md:w-1/2'>There is also a section where admins assign each participant of a training to a small group led by a faculy member.
-          </p>
+        <img src="/images/cmbm/CRUD.png" className=' mt-10 w-1/2  md:w-1/3   self-center' />
+        <div className='self-center w-3/4 md:w-1/3 flex flex-col items-center'>
+          <div className='w-full self-center justify-evenly flex mt-36 md:mt-52 space-x-5 px-10'>
+            <img src="/images/cmbm/heads.png" className='rounded-xl -rotate-6 w-1/3  self-end ' />
+            <p className=''>There is also a section where admins assign each participant of a training to a small group led by a faculy member.
+            </p>
+          </div>
+          <img src="/images/cmbm/small-groups.png" className=' shadow-2xl rounded-xl mt-2 w-full  self-center' />
+          <p className=' mt-2 w-3/4 self-start'>Students will then only see their small group in the small group section of the training page</p>
         </div>
-        <img src="/images/cmbm/heads.png" className='rounded-xl -rotate-6 mt-10 w-3/4 md:w-[10%]  self-center' />
+        <div className='  flex justify-center items-center mt-24 md:mt-32'>
+          <div className='w-1/2 flex justify-end md: pl-10 '>
+            <p className='text-right md:w-3/4 xl:w-1/2'>The core of the app (backend) is supported by Google Firebase which provides a NOSQL Database, as well as user authentication and authorization. </p>
+          </div>
+          <img src="/images/cmbm/firebase.png" className='w-1/2 object-contain' />
+        </div>
+        <div className='  flex justify-center items-center md:mt-10  space-x-[8%] '>
+          <img src="/images/cmbm/front-end.png" className='w-1/2 object-contain pl-9' />
+          <div className='w-1/2 flex justify-start md: pr-10 '>
+            <p className='md:w-3/4 self-start xl:w-1/2'>The font-end is A next,js app  which uses Chakra UI for elements and  react-query for fetching the data from the database. </p>
+          </div>
 
-        <img src="/images/cmbm/small-groups.png" className=' shadow-2xl rounded-xl mt-10 w-3/4 md:w-1/4  self-center' />
-        <div className='w-1/2 flex  justify-end md: pl-10 -mt-24 md:mt-10'>
-          <p className='text-right md:w-3/4 xl:w-1/2'>The core of the app is supported by Google Firebase which provides a NOSQL Database, as well as user authentication and authorization. </p>
         </div>
-        <div className='w-1/2 pl-10 self-end flex mt-24 md:mt-52'>
-          <p className='text-left md:w-1/2'>The font-end is a Next.js app  which uses Chakra UI for elements and  react-query for fetching the data from the database.
-          </p>
+        <div className='mt-24 self-center flex flex-col items-center w-full px-10'>
+          <p><span className='font-bold'> react-table </span> is also used for data display</p>
+          <img src="/images/cmbm/table.png" className=' shadow-2xl rounded-xl md:w-1/3 mt-5 ' />
+        </div>
+        <div className='mt-24 self-center flex flex-col items-center w-full px-10'>
+          <p className='text-center'><span className='font-bold '> Mind-Body Center </span> is hosted on</p>
+          <img src="/images/cmbm/vercel.png" className=' md:w-1/3  ' />
+        </div>
+        <div className="flex justify-center md:justify-end md:px-20 lg:pr-28 pt-64">
+          <Footer />
         </div>
       </div>
+
+
 
 
     </div >

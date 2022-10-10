@@ -21,9 +21,9 @@ const MyApp = ({ Component, pageProps }) => {
             <Component {...pageProps} />
           </div>
         </div>
-        <div className="flex justify-center md:justify-end md:px-20 lg:pr-28 pt-64">
+        {/* <div className="flex justify-center md:justify-end md:px-20 lg:pr-28 pt-64">
           <Footer />
-        </div>
+        </div> */}
       </div></>)
 }
 export default MyApp
