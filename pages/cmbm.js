@@ -1,6 +1,6 @@
 import React from 'react'
-import { Background, Label, LeftBox, RightBox } from '../components/Project'
-import { MdComputer } from "react-icons/md";
+import { Background, Label, } from '../components/Project'
+import { MdComputer, MdPark } from "react-icons/md";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
 import { BiLinkExternal } from "react-icons/bi";
@@ -11,7 +11,7 @@ import Footer from '../components/Footer';
 const projectData = {
   name: { text: "Mind-Body Center", link: "https://cmbmbox.vercel.app/" },
   desc: "The online hub for your education in Mind-Body Medicine",
-  client: { text: "The Center for Mind-Body Medicine", link: "" },
+  client: { text: "The Center for Mind-Body Medicine", link: "https://www.cmbm.org/" },
   technology: {
     frontend: "",
     backend: "",
@@ -26,21 +26,23 @@ function Cmbm({ projectData }) {
     <div className='dark:bg-gray-600 '>
       {/* < Sun className=" z-0 relative w-full top-[2400px] md:top-[2000px] 2xl:top-[2600px] h-[7000px] md:h-[6000px] left-1/2 -translate-x-1/2" /> */}
       <div className="  text-lg md:text-2xl w-full flex flex-col mt-16 absolute top-0 overflow-hidden  ">
-        <RightBox>
-          <Label text="PROJECT" />
-        </RightBox>
-        <div className=' z-30 flex justify-center mb-20 mt-2 '>
-          <a href={projectData.name.link} target="_blank" className=' '>
-            <h1 className=" text-2xl sm:text-4xl italic whitespace-nowrap hover:underline mr-1">
-              {" "}
-              {projectData.name.text}{" "}
-            </h1>
+        <div className="w-1/2 self-end flex">
+          <a href={projectData.name.link} target="_blank" className='mr-1 '>
+            <Label text="PROJECT" />
           </a>
-          <a href={projectData.name.link} target="_blank" className=' h-min '>
-            <BiLinkExternal className=' w-4 h-4' />
+          <a href={projectData.name.link} target="_blank" className=''>
+            <BiLinkExternal className=' w-3 h-3' />
           </a>
         </div>
-        <RightBox>
+
+        <a href={projectData.name.link} target="_blank" className='w-min z-30 self-center mb-20 mt-2 '>
+          <h1 className=" text-2xl sm:text-4xl italic whitespace-nowrap   hover:underline mr-1">
+            {" "}
+            {projectData.name.text}{" "}
+          </h1>
+        </a>
+
+        <div className=" z-30 w-1/2 self-end">
           <Label text="PLATFORM" />
           <div className="flex justify-start self-end items-center whitespace-nowrap mb-16 ">
             <h3 className="">{projectData.type}</h3>
@@ -54,9 +56,21 @@ function Cmbm({ projectData }) {
               <CgWebsite className="dark:fill-white fill-black w-8 h-7 ml-2" />
             )}
           </div>
-          <Label text="CLIENT" />
-          <p className="  z-40 w-3/4"> {projectData.client.text} </p>
-        </RightBox>
+          <div className='flex'>
+            <a href={projectData.client.link} className="hover:underline mr-1">
+              <Label text="CLIENT" />
+            </a>
+
+            <a href={projectData.client.link} className="hover:underline">
+              <BiLinkExternal className=' w-3 h-3' />
+            </a>
+          </div>
+          <a href={projectData.client.link} className="hover:underline">
+            <p className=" w-3/4  "> {projectData.client.text} </p>
+          </a>
+
+
+        </div>
         <div className=' z-40 w-1/2 flex flex-col self-start text-right'>
           <br className='mt-6' />
           <Label text="SUMMARY" />
