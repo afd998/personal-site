@@ -3,6 +3,8 @@ import { Background, Label, LeftBox, RightBox } from '../components/Project'
 import { MdComputer } from "react-icons/md";
 import { IoPhonePortraitOutline } from "react-icons/io5";
 import { CgWebsite } from "react-icons/cg";
+import { BiLinkExternal } from "react-icons/bi";
+
 import Star from "../public/images/cmbm/star.svg";
 import Sun from "../public/images/cmbm/sun.svg";
 import Footer from '../components/Footer';
@@ -27,10 +29,17 @@ function Cmbm({ projectData }) {
         <RightBox>
           <Label text="PROJECT" />
         </RightBox>
-        <h1 className="text-4xl italic mt-2  text-center mb-20">
-          {" "}
-          {projectData.name.text}{" "}
-        </h1>
+        <div className=' z-30 flex justify-center mb-20 mt-2 '>
+          <a href={projectData.name.link} target="_blank" className=' '>
+            <h1 className=" text-2xl sm:text-4xl italic whitespace-nowrap hover:underline mr-1">
+              {" "}
+              {projectData.name.text}{" "}
+            </h1>
+          </a>
+          <a href={projectData.name.link} target="_blank" className=' h-min '>
+            <BiLinkExternal className=' w-4 h-4' />
+          </a>
+        </div>
         <RightBox>
           <Label text="PLATFORM" />
           <div className="flex justify-start self-end items-center whitespace-nowrap mb-16 ">
