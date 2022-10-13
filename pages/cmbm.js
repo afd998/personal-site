@@ -26,7 +26,7 @@ function Cmbm({ projectData }) {
     <div className='dark:bg-gray-600 '>
       {/* < Sun className=" z-0 relative w-full top-[2400px] md:top-[2000px] 2xl:top-[2600px] h-[7000px] md:h-[6000px] left-1/2 -translate-x-1/2" /> */}
       <div className="  text-lg md:text-2xl w-full flex flex-col mt-16 absolute top-0 overflow-hidden  ">
-        <div className="w-1/2 self-end flex">
+        <div className=" z-40 w-1/2 self-end flex">
           <a href={projectData.name.link} target="_blank" className='mr-1 '>
             <Label text="PROJECT" />
           </a>
